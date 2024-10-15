@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { AITool } from "@/types/AITool"
 
 interface AIToolGridProps {
@@ -9,7 +10,16 @@ export default function AIToolGrid({ tools }: AIToolGridProps) {
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       {tools.map(tool => (
         <div key={tool.name} className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
-          {tool.image && <img src={tool.image} alt={tool.name} className="w-full h-48 object-cover" />}
+          {tool.image && (
+            <div className="relative w-full h-48">
+              <Image 
+                src={tool.image} 
+                alt={tool.name} 
+                layout="fill" 
+                objectFit="cover"
+              />
+            </div>
+          )}
           <div className="p-4">
             <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">{tool.name}</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">{tool.description}</p>

@@ -3,7 +3,6 @@ import { mockAITools } from '../mockData';
 import AIToolGrid from './AIToolGrid';
 import SearchBar from './SearchBar';
 import CategoryFilter from './CategoryFilter';
-import { AITool } from "@/types/AITool";
 
 const AIToolsList: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
