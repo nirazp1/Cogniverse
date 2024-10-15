@@ -72,6 +72,7 @@ export default function Home() {
             </div>
           </div>
         </motion.header>
+       
 
         <main className="container mx-auto px-4 py-8 pt-24 font-sans">
           <AIToolsList />
@@ -84,7 +85,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 1 }}
         >
           <div className="container mx-auto px-4 text-center text-base text-gray-600 dark:text-gray-400">
-            <p>&copy; 2024 AI Collection. All rights reserved.</p>
+            <p>&copy; 2024 Cogniverse. All rights reserved.</p>
           </div>
         </motion.footer>
       </div>
