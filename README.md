@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cogniverse - AI Tools Collection Hub
+
+![Cogniverse Demo](demo-screenshot.png)
+
+Cogniverse is a comprehensive collection of AI tools and platforms, designed to help users discover and explore the latest advancements in artificial intelligence. This web application provides an intuitive interface for browsing, searching, and filtering various AI tools across multiple categories.
+
+## Features
+
+- **Extensive AI Tool Collection**: Browse through a curated list of AI tools and platforms.
+- **Category Filtering**: Easily filter tools by categories such as Image Generation, Natural Language Processing, Coding Assistants, and more.
+- **Search Functionality**: Quickly find specific tools or explore based on keywords.
+- **Responsive Design**: Enjoy a seamless experience across desktop and mobile devices.
+- **Dark Mode**: Toggle between light and dark themes for comfortable viewing in any environment.
+
+## Technology Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion (for animations)
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:   ```
+   git clone https://github.com/yourusername/cogniverse.git   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Navigate to the project directory:   ```
+   cd cogniverse   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Install dependencies:   ```
+   npm install   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Run the development server:   ```
+   npm run dev   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `src/app`: Contains the main application pages and layouts.
+- `src/components`: Reusable React components.
+- `src/types`: TypeScript type definitions.
+- `src/mockData.ts`: Mock data for AI tools (replace with API integration in production).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Screenshot
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To add the screenshot to your README:
 
-## Deploy on Vercel
+1. Place the `demo-screenshot.png` file in the root directory of your project.
+2. The image will automatically be displayed in the README as shown at the top of this file.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
