@@ -63,10 +63,10 @@ const allTools: AITool[] = [
     "name": "Humanize AI",
     "description": "Advanced AI tool that generates incredibly natural, human-like text indistinguishable from content written by people, capable of producing 100% human-quality writing across various styles and formats",
     "category": ["Humanize AI"],
-    "url": "https://www.humanizeai.com",
+    "url": "https://www.humanizeai.pro/",
     "pricing": "Free / Pro plans"
   },
-  
+
   {
     name: "Mem.ai",
     description: "AI-powered note-taking and knowledge management",
