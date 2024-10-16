@@ -19,12 +19,12 @@ const AIToolsList: React.FC = () => {
   }, []);
 
   const sortedTools = useMemo(() => {
-    return [...uniqueTools].sort((a, b) => a.category.localeCompare(b.category));
+    return [...uniqueTools].sort((a, b) => a.category[0].localeCompare(b.category[0]));
   }, [uniqueTools]);
 
   const filteredTools = useMemo(() => {
     return sortedTools.filter((tool) => {
-      const categoryMatch = selectedCategory === 'all' || tool.category.toLowerCase() === selectedCategory.toLowerCase();
+      const categoryMatch = selectedCategory === 'all' || tool.category.includes(selectedCategory);
       const searchMatch = tool.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                           tool.description.toLowerCase().includes(searchTerm.toLowerCase());
       return categoryMatch && searchMatch;
@@ -32,8 +32,10 @@ const AIToolsList: React.FC = () => {
   }, [selectedCategory, searchTerm, sortedTools]);
 
   const categories = useMemo(() => {
-    const uniqueCategories = new Set(sortedTools.map((tool) => tool.category));
-    return ['all', ...Array.from(uniqueCategories)];
+    const categorySet = new Set<string>();
+    categorySet.add('all');
+    sortedTools.forEach(tool => tool.category.forEach((cat: string) => categorySet.add(cat)));
+    return Array.from(categorySet);
   }, [sortedTools]);
 
   const handleCategoryChange = (category: string) => {

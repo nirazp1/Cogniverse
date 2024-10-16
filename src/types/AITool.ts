@@ -4,6 +4,6 @@ export interface AITool {
   description: string
   image?: string
   url: string
-  category: string
+  category: string[]
   pricing: string
 }
