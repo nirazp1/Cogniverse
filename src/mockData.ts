@@ -55,7 +55,7 @@ const allTools: AITool[] = [
   {
     name: "Perplexity AI",
     description: "AI-powered search tools",
-    category: ["Search Engine"],
+    category: ["Search Engine", "AI Assistant"],
     url: "https://www.perplexity.ai",
     pricing: "Free / Pro plans"
   },
