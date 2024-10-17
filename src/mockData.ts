@@ -1345,7 +1345,14 @@ const allTools: AITool[] = [
            category: ["Large Language Model"],
            url: "https://qwen.ai/",
            pricing: "Varies"
-         }
+         },
+         {
+          name: "Cogniverse",
+          description: "Bookmark your favorite AI tools and resources",
+          category: ["Ai Assistant", "Large Language Model"],
+          url: "https://cogniverse-one.vercel.app/",
+          pricing: "Free"
+        }
 ];
 
 // Remove duplicates
