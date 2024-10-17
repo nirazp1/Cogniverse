@@ -1349,7 +1349,7 @@ const allTools: AITool[] = [
          {
           name: "Cogniverse",
           description: "Bookmark your favorite AI tools and resources",
-          category: ["Ai Assistant", "Large Language Model"],
+          category: ["AI Bookmark"],
           url: "https://cogniverse-one.vercel.app/",
           pricing: "Free"
         }
